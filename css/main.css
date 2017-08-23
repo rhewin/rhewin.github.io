@@ -22,9 +22,9 @@ ul.inline li { display:inline; }
 }
 .main_profile { display:table; text-align:center; background:url('../img/bg_prof.jpg') 0px center no-repeat; background-size:cover; color:#FFF; }
 .main_profile .inner { display:table-cell; vertical-align:middle; padding:0 50px; }
-.main_profile h1 { font-size:3em; line-height:1.5; letter-spacing:.05em; }
-.main_profile h1:after { content:""; display:block; border-bottom:1px dashed #FFF; width:200px; margin:0 auto; padding:0.83em 0 0; }
-.main_profile h4 { font-family:'Open Sans', sans-serif; font-size:1.2em; letter-spacing:.03em; line-height:1.8; font-weight:300; }
+.main_profile h1 { font-size:3em; line-height:1.5; letter-spacing:.05em; text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1); }
+.main_profile h1:after { content:""; display:block; border-bottom:1px dashed #FFF; width:200px; margin:0 auto; padding:0.5em 0 0; }
+.main_profile h4 { font-family:'Open Sans', sans-serif; font-size:1.2em; letter-spacing:.03em; line-height:1.8; font-weight:300; text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1); }
 .floatmenu { position:fixed; left:calc(25% - 108px); /*minus floatmenu width*/ top:calc(50% - 163px); background:rgba(255,255,255,0.1); }
 .floatmenu ul li { display:table; height:108px; width:108px; border-bottom:1px solid rgba(255,255,255,0.3); }
 .floatmenu ul li:last-child { border-bottom:0; }
