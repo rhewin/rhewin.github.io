@@ -7,27 +7,28 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">		
 				
-		<link rel="stylesheet" href="css/normalize.css">						
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 		<link rel="stylesheet" href="css/styles.css">				
 		<link rel="stylesheet" href="css/main.css">		
 	</head>
 	<body>		
 		<div class="floatmenu">		
 			<ul class="nolist">
-				<li>
-					<a href="#">
+				<li class="first link_about">
+					<a href="javascript:void(0);">
 						<div class="icon icon-ios-person"></div>
 						<span class="label">ABOUT</span>
 					</a>
 				</li>
-				<li>
-					<a href="#">
+				<li class="link_resume">
+					<a href="javascript:void(0);">
 						<div class="icon icon-book-open"></div>
 						<span class="label">RESUME</span>
 					</a>
 				</li>
-				<li>
-					<a href="#">
+				<li class="last link_portfolio">
+					<a href="javascript:void(0);">
 						<div class="icon icon-images"></div>
 						<span class="label">PORTFOLIO</span>
 					</a>
@@ -35,10 +36,10 @@
 			</ul>
 		</div>
 		<div class="wrapper">
-			<div class="container main_profile">					
+			<div class="container main_profile">
 				<div class="inner">
 					<div class="description">
-						<h1><strong>RHEZA SINDHUWINATA</strong></h1>
+						<h1 class="title">Rheza Sindhuwinata</h1>
 						<h4>A self-motivated, enthusiast, creative <strong>Senior Full Stack Web Developer</strong>, specialising in building <strong>E-commerce website</strong> and <strong>mobile responsive site</strong></h4>
 					</div>
 					<div class="social_media">
@@ -52,6 +53,117 @@
 					</div>
 				</div>
 			</div>		
+			<div class="container backpanel panel_about">
+				<div class="inner section_description">
+					<h2 class="title">About Me</h2>
+					<hr class="divider" />
+					<p>Hello, I'm <strong>Rheza Sindhuwinata</strong> and i'm a passionate <strong>web developer</strong>. I currently reside in Surabaya, Indonesia. I love art, design, photography and travelling.</p>					
+				</div>
+				<div class="inner section_personal_info">
+					<h2 class="title">Personal Info</h2>
+					<hr class="divider dark" />
+					<div class="block md3 sm2">
+						<h5>NAME</h5>
+						<div class="value">Rheza Sindhuwinata</div>
+					</div>
+					<div class="block md3 sm2">
+						<h5>BORN</h5>
+						<div class="value">September 26, 1986</div>
+					</div>
+					<div class="block md3 sm2">
+						<h5>LOCATION</h5>
+						<div class="value">Surabaya, Indonesia</div>
+					</div>
+					<div class="block md3 sm2">
+						<h5>PHONE</h5>
+						<div class="value">(+62) 89-6677-56-100</div>
+					</div>
+					<div class="block md3 sm2">
+						<h5>SKYPE</h5>
+						<div class="value">rheza.s</div>
+					</div>
+					<div class="block md3 sm2">
+						<h5>EMAIL</h5>
+						<div class="value"><a href="mailto:rheza.s@gmail.com">rheza.s@gmail.com</a></div>
+					</div>
+				</div>
+				<div class="inner section_quote">
+					"Nice Quote"
+				</div>
+			</div>			
+			<div class="container backpanel panel_resume">
+				<div class="inner section_resume">
+					<h2 class="title">Resume</h2>
+					<hr class="divider" />
+					<div class="resume_point">
+						<strong>Vi8e Interactive, Pte. Ltd. - Senior Full Stack Web Developer</strong><br/><span class="date">(Feb 2011 - Oct 2011)</span>
+						<ul>
+							<li>Responsible for designing and developing a loyalty point system for Ahava Singapore in Magento Framework, it’s a promotion tools to increase sales amount</li>
+							<li>Developing invite friend module for Ahava Singapore and make an impressive amount of new sign up customer</li>
+							<li>Building a product finder tools for Hypax Singapore to make customer easily to find their machinery tools (Magento)</li>
+							<li>Responsible for tweaking a site page to load under 2s</li>
+							<li>Implementing real world sales promotions into Magento systems using a serial set of conditions rule formula</li>
+							<li>Building magento API to communicate with Yii system</li>
+							<li>Developing PWP system into magento store</li>
+							<li>Working closely together with the PM, copywriter and tester to ensure the delivery site is met with the deadline</li>
+						</ul>
+					</div>					
+					<div class="resume_point">
+						<strong>Vi8e Interactive, Pte. Ltd. - Frontend Web Developer</strong><br/><span class="date">(Feb 2011 - Oct 2011)</span>
+						<ul>
+							<li>Collaborate with backend developers and web designers to improve site usability</li>
+							<li>Building reusable code and libraries for future use</li>
+							<li>Ensuring the technical feasibility of UI/UX designs</li>
+							<li>Building a structural theme package for Yii framework that can easily to maintain and implement to other project</li>
+							<li>Helping backend developers with coding and troubleshooting</li>
+							<li>Building an efficient and clear readibility CSS</li>
+						</ul>
+					</div>					
+					<div class="resume_point">
+						<strong>Vi8e Interactive, Pte. Ltd. - Junior Web Developer</strong><br/><span class="date">(Feb 2011 - Oct 2011)</span>
+						<ul>
+							<li>Providing project scope recommendation and set a working timeline</li>
+							<li>Troubleshooting project bugs in Magento framework</li>
+							<li>Using markup languages to create user friendly website</li>
+							<li>Maintaining and improving website</li>
+							<li>Stay up-to-date on emerging technologies</li>							
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<div class="container backpanel panel_portfolio">
+				<div class="inner section_portfolio">
+					<h2 class="title">Portfolio</h2>
+					<hr class="divider" />
+					<div class="block md3 sm2">						
+						<img src="img/01.jpg" alt="" />
+						<p class="title">Giant Online</p>
+					</div>
+					<div class="block md3 sm2">
+						<img src="img/02.jpg" alt="" />
+						<p class="title">Ahava Singapore</p>
+					</div>
+					<div class="block md3 sm2">
+						<img src="img/03.jpg" alt="" />
+						<p class="title">Polar Puff Cakes</p>
+					</div>
+					<div class="block md3 sm2">
+						<img src="img/04.jpg" alt="" />
+						<p class="title">Chef in Box</p>
+					</div>
+					<div class="block md3 sm2">
+						<img src="img/05.jpg" alt="" />
+						<p class="title">Coldstorage</p>
+					</div>
+					<div class="block md3 sm2">
+						<img src="img/06.jpg" alt="" />
+						<p class="title">Hypax Pte. Ltd</p>
+					</div>
+				</div>
+			</div>
 		</div>
+		<script src="js/jquery-1.12.0.min.js"></script>
+		<script src="js/jquery.mCustomScrollbar.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
