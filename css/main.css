@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:700|Open+Sans');
 body { background:url('../img/bg.jpg') 0 0 no-repeat; background-size:cover; color:#A8A7A6; font-family:'Open Sans', sans-serif; }
-a { display:inline-block; text-decoration:none; color:#0087e0; -webkit-transition:all 0.3s ease; transition:all 0.3s ease; }
+a { display:inline-block; text-decoration:none; color:#0087e0; -webkit-transition:all .3s ease; transition:all .3s ease; }
 h1, h2, h3, h4, h5, h6 { font-weight:normal; }
 b, strong { font-weight:700; }
 p { line-height:1.8; margin:0; }
@@ -26,21 +26,23 @@ ul.inline li { display:inline; }
 .main_profile .inner { display:table-cell; vertical-align:middle; padding:0 50px; z-index:2; position:relative; }
 .main_profile h1:after { content:""; display:block; border-bottom:2px solid #FFF; width:50px; margin:0 auto; padding:0.5em 0 0; text-shadow:0 4px 3px rgba(0,0,0,0.4), 0 8px 13px rgba(0,0,0,0.1), 0 18px 23px rgba(0,0,0,0.1); }
 .main_profile h4 { font-size:1.2em; letter-spacing:.03em; line-height:1.8; font-weight:300; text-shadow:0 4px 3px rgba(0,0,0,0.4), 0 8px 13px rgba(0,0,0,0.1), 0 18px 23px rgba(0,0,0,0.1); }
-.backpanel { display:block; margin-left:-25%; left:50%; z-index:5; padding:0; top:15px; bottom:15px; height:auto; width:615px; overflow-y:auto; }
-.backpanel .inner { padding:50px; text-align:center; color:#fff; }
-.backpanel h5 { font-family:'Noto Sans', sans-serif; font-weight:bold; }
+.backpanel { display:block; margin-left:-25%; left:50%; z-index:5; padding:0; padding-bottom:50px; top:15px; bottom:15px; height:auto; width:615px; overflow-y:auto; }
+.backpanel .inner { padding:30px 50px; text-align:center; color:#fff; }
 .backpanel .value { font-size:14px; color:#555; }
 .panel_about { background:rgba(52, 152, 219, .8); }
-.panel_about .inner.section_personal_info { background:#f9f9f9; color:#333; }
+.panel_about .inner.section_personal_info { background:#f9f9f9; color:#333; padding:25px; }
 .panel_resume { background:rgba(44, 193, 107, .8); }
 .panel_portfolio { background:rgba(246, 97, 82, .8); }
+.section_personal_info .block { cursor:pointer; -webkit-transition:all .3s ease; transition:all .3s ease; }
+.section_personal_info .block:hover { opacity:0.5; }
 .section_resume .resume_point { text-align:left; margin-bottom:20px; line-height:1.5; }
 .section_resume .resume_point ul { padding-left:50px; }
 .section_resume .resume_point ul li { font-size:14px; }
 .section_resume span.date { font-style:italic; font-size:14px; }
 .section_portfolio .block { -webkit-transition:all .5s ease; transition:all .5s ease; }
 .section_portfolio img { width:100%; height:103px; overflow:hidden; }
-.section_portfolio .block:hover { cursor:pointer; opacity:.5; }
+.section_portfolio .block:hover { cursor:pointer; opacity:1 !important; -webkit-animation-play-state:paused; -moz-animation-play-state:paused;
+    -o-animation-play-state:paused; animation-play-state: paused; animation:step-end; }
 .section_portfolio p.title { font-size:14px; margin-bottom:15px; }
 .floatmenu { position:fixed; left:calc(25% - 108px); top:calc(50% - 163px); -webkit-transition:all 1s ease; transition:all 1s ease; z-index:2; }
 .floatmenu ul li { display:table; height:108px; width:108px; border-bottom:1px solid rgba(255,255,255,0.3); background:rgba(255,255,255,0.1); }
@@ -55,4 +57,4 @@ ul.inline li { display:inline; }
 .social_media a { width:40px; height:40px; line-height:40px; border-radius:100%; font-size:18px; background:rgba(255,255,255,0.15); color:#FFF; }
 .social_media a:hover { transform: translate(0, -8px); background:rgba(246, 239, 159,0.1); }
 .social_media li + li { margin-left:15px; }
-	
+.mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools { opacity:1; filter:"alpha(opacity=1)"; -ms-filter: "alpha(opacity=1)"; }

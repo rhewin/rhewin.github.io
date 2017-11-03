@@ -1,0 +1,38 @@
+@keyframes flickerAnimation {
+  0%   { opacity:0.8; }
+  50%  { opacity:0.2; }
+  100% { opacity:0.8; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:0.8; }
+  50%  { opacity:0.2; }
+  100% { opacity:0.8; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:0.8; }
+  50%  { opacity:0.2; }
+  100% { opacity:0.8; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:0.8; }
+  50%  { opacity:0.2; }
+  100% { opacity:0.8; }
+}
+.animate-flicker-3 {
+   -webkit-animation: flickerAnimation 3s infinite;
+   -moz-animation: flickerAnimation 3s infinite;
+   -o-animation: flickerAnimation 3s infinite;
+    animation: flickerAnimation 3s infinite;
+}
+.animate-flicker-4 {
+   -webkit-animation: flickerAnimation 4s infinite;
+   -moz-animation: flickerAnimation 4s infinite;
+   -o-animation: flickerAnimation 4s infinite;
+    animation: flickerAnimation 4s infinite;
+}
+.animate-flicker-5 {
+   -webkit-animation: flickerAnimation 5s infinite;
+   -moz-animation: flickerAnimation 5s infinite;
+   -o-animation: flickerAnimation 5s infinite;
+    animation: flickerAnimation 5s infinite;
+}
