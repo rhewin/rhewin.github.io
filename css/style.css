@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?wvfnnj');
-  src:  url('../fonts/icomoon.eot?wvfnnj#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?wvfnnj') format('truetype'),
-    url('../fonts/icomoon.woff?wvfnnj') format('woff'),
-    url('../fonts/icomoon.svg?wvfnnj#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?uew21r');
+  src:  url('../fonts/icomoon.eot?uew21r#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?uew21r') format('truetype'),
+    url('../fonts/icomoon.woff?uew21r') format('woff'),
+    url('../fonts/icomoon.svg?uew21r#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="ico-"], [class*=" ico-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -17,49 +17,67 @@
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
+  line-height: 40px;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-news:before {
+.ico-social-facebook:before {
+  content: "\e902";
+}
+.ico-social-linkedin:before {
+  content: "\e903";
+}
+.ico-news:before {
   content: "\e900";
 }
-.icon-image:before {
+.ico-image:before {
   content: "\e901";
 }
-.icon-profile:before {
-  content: "\e923";
+.ico-news2:before {
+  content: "\e904";
 }
-.icon-phone:before {
+.ico-quote:before {
+  content: "\e907";
+}
+.ico-google:before {
+  content: "\e905";
+}
+.ico-instagram:before {
+  content: "\e906";
+}
+.ico-file-text2:before {
+  content: "\e926";
+}
+.ico-phone:before {
   content: "\e942";
 }
-.icon-address-book:before {
+.ico-address-book:before {
   content: "\e944";
 }
-.icon-envelop:before {
+.ico-envelop:before {
   content: "\e945";
 }
-.icon-location:before {
+.ico-location:before {
   content: "\e947";
 }
-.icon-location2:before {
+.ico-location2:before {
   content: "\e948";
 }
-.icon-calendar:before {
+.ico-calendar:before {
   content: "\e953";
 }
-.icon-display:before {
+.ico-display:before {
   content: "\e956";
 }
-.icon-user:before {
+.ico-user:before {
   content: "\e971";
 }
-.icon-user-tie:before {
-  content: "\e976";
+.ico-github:before {
+  content: "\eab0";
 }
-.icon-skype:before {
+.ico-skype:before {
   content: "\eac5";
 }

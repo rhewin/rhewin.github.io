@@ -4,6 +4,8 @@ $(function () {
 		alwaysShowScrollbar: 0,
 	});	
 	
+	$('.backpanel').show();
+	
 	function close() {		
 		$('.backpanel').removeClass('active');	
 		$('.floatmenu li').removeClass('active');		
@@ -45,8 +47,9 @@ $(function () {
 				'left': '20px',
 			});
 			$(panel).css({
-				'margin-left': '52px',	
-				'left': '50%',
+				'margin-left': '0',	
+				//'left': '50%',
+				'left': 'calc(108px + 630px)',
 				'z-index': '6' 
 			});					
 		}		
