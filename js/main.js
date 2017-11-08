@@ -66,4 +66,8 @@ $(function () {
 	$('.link_portfolio').click(function(){		
 		togglePanel('.panel_portfolio', '.link_portfolio');		
 	});		
+	
+	$('.link_contact').click(function(){		
+		togglePanel('.panel_contact', '.link_contact');		
+	});		
 });
