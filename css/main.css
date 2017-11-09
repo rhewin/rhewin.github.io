@@ -94,3 +94,25 @@ form.white input[type="submit"]:hover { opacity:0.5; }
 .social_media a:hover { transform: translate(0, -8px); background:rgba(246, 239, 159,0.1); }
 .social_media li + li { margin-left:15px; }
 .mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools { opacity:1; filter:"alpha(opacity=1)"; -ms-filter: "alpha(opacity=1)"; }
+
+@media only screen and (max-device-width: 667px) { 
+	/* STYLES GO HERE */
+	.container { top:0; position:relative; }
+	.floatmenu { display:none; }
+	.main_profile {		
+		left: 0;
+		width: 100%;
+		margin-left: 0;
+		padding: 0;
+	}
+	.main_profile .inner { padding:0 15px; }
+	.backpanel .inner { padding:30px 15px; }
+	.backpanel {
+		margin-left: 0;
+		left: 0;
+		width: 100%;
+	}
+	.panel_about .inner.section_personal_info { padding:25px 15px 35px; }
+	.backpanel .value { font-size:0.7em; }
+	.section_portfolio img { height:auto; }	
+}
