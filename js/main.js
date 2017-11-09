@@ -71,7 +71,9 @@ $(function () {
 	});		
 	
 	/* Portfolio Filter */
-	$('.filter-list').click(function(){				
+	$('.filter-list').click(function(){		
+		$('.filter-list').removeClass('active');
+		$(this).addClass('active');
 		if ($(this).attr("id") == "all") {					
 			$('.section_portfolio .block').stop(true,true).transition({ 
 				scale: 0,
