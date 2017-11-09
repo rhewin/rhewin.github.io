@@ -22,7 +22,7 @@ hr.divider.dark { border-top:2px solid #333; }
 ul { -webkit-padding-start:0; -webkit-margin-before:0; -webkit-margin-after:0; }
 ul.nolist { list-style-type:none; }
 ul.inline li { display:inline; }
-form input, form textarea { border-radius:15px; padding:0.7rem 1rem; font-size:12px; min-width:200px; }
+form input, form textarea { border-radius:15px; padding:0.7rem 1rem; font-size:0.75em; min-width:200px; }
 form textarea { width:80%; min-height:80px; border-radius:15px; padding:1rem; }
 form input[type="submit"] { min-width:150px; cursor:pointer; }
 
@@ -50,7 +50,7 @@ form.white input[type="submit"]:hover { opacity:0.5; }
 .main_profile h4 { font-size:1.3em; line-height:1.6; text-shadow:0 2px 1px rgba(0,0,0,0.5); letter-spacing:.03em; }
 .backpanel { display:none; margin-left:-25%; left:50%; z-index:5; padding:0; padding-bottom:50px; top:15px; bottom:15px; height:auto; width:615px; overflow-y:auto; }
 .backpanel .inner { padding:30px 50px; text-align:center; color:#fff; }
-.backpanel .value { font-size:14px; color:#555; }
+.backpanel .value { font-size:0.875em; color:#555; }
 .panel_about { background:rgba(52, 152, 219, .9); }
 .panel_about .inner.section_personal_info { background:#f9f9f9 url('../img/tri.jpg') 0 0 repeat; color:#555; padding:25px 25px 35px; }
 .panel_resume { background:rgba(218, 165, 32, .8); }
@@ -62,7 +62,7 @@ form.white input[type="submit"]:hover { opacity:0.5; }
 .section_personal_info .block:hover { opacity:0.5; }
 .section_personal_info a { color:#555; }
 .section_quote .quote { margin:0 40px; font-size:1.2em; line-height:1.5; font-style:italic; letter-spacing:.03em; }
-.section_quote .quote .ico-quote { font-size:15px; line-height: 1.2 !important; vertical-align:top; }
+.section_quote .quote .ico-quote { font-size:0.782em; line-height: 1.2 !important; vertical-align:top; }
 .section_quote .quote .ico-quote.first { transform:rotate(180deg); }
 .section_resume .resume_point { text-align:left; margin-bottom:20px; line-height:1.5; }
 .section_resume .resume_point ul { padding-left:50px; }
@@ -95,23 +95,13 @@ form.white input[type="submit"]:hover { opacity:0.5; }
 .social_media li + li { margin-left:15px; }
 .mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools { opacity:1; filter:"alpha(opacity=1)"; -ms-filter: "alpha(opacity=1)"; }
 
-@media only screen and (max-device-width: 667px) { 
-	/* STYLES GO HERE */
-	.container { top:0; position:relative; }
+@media only screen and (max-device-width: 667px) { 	
+	.container { top:0; position:relative; padding-bottom:0; }
 	.floatmenu { display:none; }
-	.main_profile {		
-		left: 0;
-		width: 100%;
-		margin-left: 0;
-		padding: 0;
-	}
+	.main_profile {	left:0; width:100%; margin-left:0; padding:0; }
 	.main_profile .inner { padding:0 15px; }
 	.backpanel .inner { padding:30px 15px; }
-	.backpanel {
-		margin-left: 0;
-		left: 0;
-		width: 100%;
-	}
+	.backpanel { margin-left:0; left:0; width:100%; }
 	.panel_about .inner.section_personal_info { padding:25px 15px 35px; }
 	.backpanel .value { font-size:0.7em; }
 	.section_portfolio img { height:auto; }	
