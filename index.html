@@ -9,7 +9,7 @@
 				
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
-		<link rel="stylesheet" href="css/style.css">				
+		<link rel="stylesheet" href="css/style.css">						
 		<link rel="stylesheet" href="css/animation.css">
 		<link rel="stylesheet" href="css/main.css">		
 	</head>
@@ -42,26 +42,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="wrapper">
-			<!-- Big Main Panel -->
-			<div class="container main_profile">
-				<div class="inner">
-					<div class="description">
-						<h1 class="title">Rheza Sindhuwinata</h1>
-						<h4>A self-motivated, enthusiast, creative <span class="highlight">Senior Full Stack Web Developer</span>, specialized in building <span class="highlight">E-commerce website</span> and <span class="highlight">mobile responsive site</span></h4>
-					</div>
-					<div class="social_media">
-						<ul class="inline nolist">
-							<li><a href="#" target="_blank"><div class="ico ico-google"></div></a></li>
-							<li><a href="https://www.linkedin.com/in/rheza-sindhuwinata/" target="_blank"><div class="ico ico-social-linkedin"></div></a></li>
-							<li><a href="#" target="_blank"><div class="ico ico-social-facebook"></div></a></li>
-							<li><a href="#" target="_blank"><div class="ico ico-instagram"></div></a></li>
-							<li><a href="https://rhewin.github.io/"><div class="ico ico-github"></div></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>		
-			
+		<div class="wrapper">							
 			<!-- About Us Panel -->
 			<div class="container backpanel panel_about">
 				<div class="inner section_description">
@@ -98,7 +79,7 @@
 				</div>
 				<div class="inner section_quote">
 					<p class="quote"><span class="ico ico-quote first">&nbsp;</span>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away <span class="ico ico-quote">&nbsp;</span><br/>
-					~ Antoine de Saint-Exupéry</p>
+					- Antoine de Saint-Exupéry -</p>
 				</div>
 			</div><!-- End of About Us Panel -->			
 			<!-- Resume Panel -->
@@ -147,49 +128,57 @@
 				<div class="inner section_portfolio">
 					<h2 class="title">Portfolio</h2>
 					<hr class="divider" />
-					<div class="block md3 sm2 animate-flicker-3">									
-						<img src="img/ahava_mod.png" alt="" />						
+					<div class="filter">
+						<span class="filter-list" id="all">All</span>
+						<span class="filter-list" id="magento">Magento</span> 
+						<span class="filter-list" id="yii">Yii</span> 
+						<span class="filter-list" id="wordpress">Wordpress</span>
 					</div>
-					<div class="block md3 sm2 animate-flicker-5">						
-						<img src="img/giant_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2 animate-flicker-4">						
-						<img src="img/gryphon_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2 animate-flicker-5">
-						<img src="img/bbn_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2 animate-flicker-3">
-						<img src="img/polar_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2 animate-flicker-4">
-						<img src="img/phs_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2 animate-flicker-4">									
-						<img src="img/dermagold_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2 animate-flicker-5">									
-						<img src="img/jwest_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2 animate-flicker-3">									
-						<img src="img/cso_mod.png" alt="" />						
+					<div class="portfolio_list">
+						<div class="block md3 sm2 animate-flicker-3 magento">									
+							<a href="http://ahava.com.sg/" target="_blank"><img src="img/ahava_mod.png" alt="" /></a>
+						</div>
+						<div class="block md3 sm2 animate-flicker-5 yii">						
+							<a href="http://giantonline.com.sg/" target="_blank"><img src="img/giant_mod.png" alt="" /></a>
+						</div>
+						<div class="block md3 sm2 animate-flicker-4 magento">
+							<a href="http://gryphontea.com/" target="_blank"><img src="img/gryphon_mod.png" alt="" /></a>
+						</div>
+						<div class="block md3 sm2 animate-flicker-5 magento">
+							<img src="img/bbn_mod.png" alt="" />						
+						</div>
+						<div class="block md3 sm2 animate-flicker-3 yii">
+							<a href="http://polarpuffs-cakes.com/" target="_blank"><img src="img/polar_mod.png" alt="" /></a>
+						</div>
+						<div class="block md3 sm2 animate-flicker-4 magento">
+							<img src="img/phs_mod.png" alt="" />						
+						</div>
+						<div class="block md3 sm2 animate-flicker-4 magento">									
+							<a href="http://dermagold.sg/" target="_blank"><img src="img/dermagold_mod.png" alt="" /></a>
+						</div>
+						<div class="block md3 sm2 animate-flicker-5 yii">									
+							<img src="img/jwest_mod.png" alt="" />						
+						</div>
+						<div class="block md3 sm2 animate-flicker-3 yii">									
+							<a href="https://coldstorage.com.sg/" target="_blank"><img src="img/cso_mod.png" alt="" /></a>
+						</div>					
+						<div class="block md3 sm2 animate-flicker-3 magento wordpress">									
+							<img src="img/capelle_mod.png" alt="" />						
+						</div>
+						<div class="block md3 sm2 animate-flicker-4 magento">									
+							<a href="http://themindcafe.com.sg/" target="_blank"><img src="img/themindcafe_mod.png" alt="" /></a>
+						</div>
+						<div class="block md3 sm2 animate-flicker-5 yii">									
+							<a href="https://chefinbox.com.sg/" target="_blank"><img src="img/cib_mod.png" alt="" /></a>
+						</div>
+						<div class="block md3 sm2 animate-flicker-5 magento">									
+							<a href="https://www.theinkroom.com.sg/" target="_blank"><img src="img/tir_mod.png" alt="" /></a>					
+						</div>
+						<div class="block md3 sm2 animate-flicker-3 magento">									
+							<a href="https://chyn.com.sg/" target="_blank"><img src="img/chyn_mod.png" alt="" /></a>					
+						</div>
+						<div class="block md3 sm2"></div>
 					</div>					
-					<div class="block md3 sm2 animate-flicker-3">									
-						<img src="img/capelle_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2 animate-flicker-4">									
-						<img src="img/themindcafe_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2 animate-flicker-5">									
-						<img src="img/cib_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2 animate-flicker-5">									
-						<img src="img/tir_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2 animate-flicker-3">									
-						<img src="img/chyn_mod.png" alt="" />						
-					</div>
-					<div class="block md3 sm2"></div>
 				</div>
 			</div><!-- End of Portfolio Panel -->
 			<!-- Contact Panel -->
@@ -221,8 +210,28 @@
 				</div>
 			</div>
 			<!-- End of Contact Panel -->
+			
+			<!-- Big Main Panel -->
+			<div class="container main_profile">
+				<div class="inner">
+					<div class="description">
+						<h1 class="title">Rheza Sindhuwinata</h1>
+						<h4>A self-motivated, enthusiast, creative <span class="highlight">Senior Full Stack Web Developer</span>, specialized in building <span class="highlight">E-commerce website</span> and <span class="highlight">mobile responsive site</span></h4>
+					</div>
+					<div class="social_media">
+						<ul class="inline nolist">
+							<li><a href="#" target="_blank"><div class="ico ico-google"></div></a></li>
+							<li><a href="https://www.linkedin.com/in/rheza-sindhuwinata/" target="_blank"><div class="ico ico-social-linkedin"></div></a></li>
+							<li><a href="#" target="_blank"><div class="ico ico-social-facebook"></div></a></li>
+							<li><a href="#" target="_blank"><div class="ico ico-instagram"></div></a></li>
+							<li><a href="https://rhewin.github.io/"><div class="ico ico-github"></div></a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- End of Big Main Panel -->	
 		</div>
 		<script src="js/jquery-1.12.0.min.js"></script>
+		<script src="js/jquery.transit.js"></script>
 		<script src="js/jquery.mCustomScrollbar.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
