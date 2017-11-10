@@ -52,15 +52,16 @@ form.white input[type="submit"]:hover { opacity:0.5; }
 .backpanel .inner { padding:30px 50px; text-align:center; color:#fff; }
 .backpanel .value { font-size:0.875em; color:#555; }
 .panel_about { background:rgba(52, 152, 219, .9); }
-.panel_about .inner.section_personal_info { background:#f9f9f9 url('../img/tri.jpg') 0 0 repeat; color:#555; padding:25px 25px 35px; }
 .panel_resume { background:rgba(218, 165, 32, .8); }
 .panel_portfolio { background:rgba(246, 97, 82, .9); }
 .panel_contact { background:rgba(182, 166, 212, .9); }
 .panel_contact .section_contact_content { text-align:left; }
 .panel_contact .section_contact_content .line { display:block; width:100%; margin-bottom:15px; }
+.section_personal_info { background:#f9f9f9 url('../img/tri.jpg') 0 0 repeat; color:#555 !important; padding:25px 25px 35px; }
 .section_personal_info .block { cursor:pointer; -webkit-transition:all .3s ease; transition:all .3s ease; }
 .section_personal_info .block:hover { opacity:0.5; }
 .section_personal_info a { color:#555; }
+.section_personal_info .icon-wrapper { font-size:2em; margin:0.67em 0; }
 .section_quote .quote { margin:0 40px; font-size:1.2em; line-height:1.5; font-style:italic; letter-spacing:.03em; }
 .section_quote .quote .ico-quote { font-size:0.782em; line-height: 1.2 !important; vertical-align:top; }
 .section_quote .quote .ico-quote.first { transform:rotate(180deg); }
