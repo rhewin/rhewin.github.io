@@ -25,11 +25,10 @@
 		<meta name="theme-color" content="#ffffff">		
 		
 		<link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-		<!--link rel="stylesheet" href="css/style.css">						
-		<link rel="stylesheet" href="css/animation.css">
-		<link rel="stylesheet" href="css/main.css"-->		
-		<link rel="stylesheet" href="css/combined.css">
+		<!--link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"-->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/main.css">		
+		<!--link rel="stylesheet" href="css/combined.css"-->
 		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109489946-1"></script>
@@ -264,10 +263,44 @@
 				</div>
 			</div>
 			<!-- End of Contact Panel -->						
-		</div>
-		<script src="js/jquery-1.12.0.min.js"></script>
-		<script src="js/jquery.transit.min.js"></script>
-		<script src="js/jquery.mCustomScrollbar.min.js"></script>
-		<script src="js/main.min.js"></script>
+		</div>				
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>		
+		<script>
+			// Fallback to loading jQuery from a local path if the CDN is unavailable			
+			window.jQuery || document.write('<script async src="js/jquery-3.2.1.min.js">\x3C/script>');
+		</script>
+		<script>
+			function loadCSS( href, before, media ){
+			  "use strict";
+			  var ss = window.document.createElement( "link" );
+			  var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+			  var sheets = window.document.styleSheets;
+			  ss.rel = "stylesheet";
+			  ss.href = href;
+			  ss.media = "only x";
+			  ref.parentNode.insertBefore( ss, ref );
+			  function toggleMedia(){
+				var defined;
+				for( var i = 0; i < sheets.length; i++ ){
+				  if( sheets[ i ].href && sheets[ i ].href.indexOf( href ) > -1 ){
+					defined = true;
+				  }
+				}
+				if( defined ){
+				  ss.media = media || "all";
+				}
+				else {
+				  setTimeout( toggleMedia );
+				}
+			  }
+			  toggleMedia();
+			  return ss;
+			}
+			
+			loadCSS("css/jquery.mCustomScrollbar.min.css");
+		</script>		
+		<script async src="js/jquery.transit.min.js"></script>
+		<script async src="js/jquery.mCustomScrollbar.min.js"></script>
+		<script async src="js/main.min.js"></script>
 	</body>
 </html>
