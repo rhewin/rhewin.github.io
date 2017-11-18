@@ -70,12 +70,11 @@ form.white input[type="submit"]:hover { opacity:.5; }
 .section_resume span.date { font-style:italic; font-size:14px; }
 
 .timeline li.timeline-item { list-style-type:none; }
+.timeline li.timeline-item:hover .timeline-marker:before { background:rgba(255,255,255, .8); border:3px solid transparent; }
 .timeline .timeline-info { display:table-cell; vertical-align:top; padding-right:30px; }
 .timeline .timeline-info span { color:rgba(255,255,255,.8); text-align:right; font-weight:100; font-size:.9em; min-width:120px; }
 .timeline .timeline-marker { position:relative; display:table-cell; vertical-align:top; width:15px; }
-.timeline-marker:before {
-    /*background: rgba(255,255,255, .8);
-    border: 3px solid transparent;*/
+.timeline-marker:before {    
 	background:none; 
 	border: 3px solid rgba(255,255,255, .8);
     border-radius: 100%;
@@ -103,6 +102,7 @@ form.white input[type="submit"]:hover { opacity:.5; }
 .timeline .timeline-content h3 { -webkit-margin-before:0; -webkit-margin-after:0.5em; color:#fff; }
 .timeline .timeline-content ul { padding-left:20px; list-style-type:square; border-bottom:1px dashed rgba(255,255,255,.3); padding-bottom:20px; }
 .timeline .timeline-content ul li { margin-bottom:8px; }
+.timeline .timeline-content ul li:hover, .timeline .timeline-info span:hover { color:rgba(255,255,255,1); }
 .timeline .timeline-item.last .timeline-content ul { border:0; padding-bottom:0; }
 .timeline .timeline-item.last .timeline-content { padding-bottom:0; }
 
@@ -119,9 +119,11 @@ form.white input[type="submit"]:hover { opacity:.5; }
     -o-animation-play-state:paused; animation-play-state: paused; animation:step-end; }
 .section_portfolio p.title { font-size:14px; margin-bottom:15px; }
 .floatmenu { position:fixed; left:calc(25% - 108px); top:calc(50% - 217px); -webkit-transition:all 1s ease; transition:all 1s ease; z-index:2; }
-.floatmenu ul li { display:table; height:108px; width:108px; border-bottom:1px solid rgba(255,255,255,0.3); background:rgba(255,255,255,0.2); }
+.floatmenu ul li { display:table; height:108px; width:108px; border-bottom:1px solid rgba(255,255,255,.5); background:rgba(255,255,255,.2); position:relative; }
+.floatmenu ul li:after { content:""; border-bottom:1px solid rgba(80,80,80,.5); position:absolute; bottom:0; left:0; right:0; }
 .floatmenu ul li.first { border-top-left-radius:10px; }
 .floatmenu ul li.last { border-bottom-left-radius:10px; border-bottom:0; }
+.floatmenu ul li.last:after { display:none; }
 .floatmenu ul li a { display:table-cell; color:#FFF; text-align:center; vertical-align:middle; height:100%; position:relative; font-weight:bold; font-size:0.7rem; line-height:2.5em; letter-spacing:1px; }
 .floatmenu ul li:hover, .floatmenu ul li.active { background:rgba(246, 239, 159,0.2); }
 .floatmenu ul li:hover a { -webkit-transition:all .5s ease; transition:all .5s ease; transform:scale(1.1,1.1); -webkit-transform:scale(1.1,1.1); color:#000; }

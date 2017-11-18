@@ -4,6 +4,8 @@ $(function () {
 		alwaysShowScrollbar: 0,
 	});		
 	$('.backpanel').show();		
+	/*window.sr = ScrollReveal({ reset: true });
+	sr.reveal('.animated');	*/
 	
 	function close() {		
 		$('.backpanel').removeClass('active');	

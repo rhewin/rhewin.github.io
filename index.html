@@ -25,7 +25,8 @@
 		<meta name="theme-color" content="#ffffff">		
 		
 		<link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">		
+		<link rel="stylesheet" href="css/animations.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/main.css">		
 		<!--link rel="stylesheet" href="css/combined.css"-->
@@ -43,27 +44,27 @@
 	</head>
 	<body>		
 		<div class="floatmenu">		
-			<ul class="nolist">
+			<ul class="nolist animatedParent" data-sequence='250'>
 				<li class="first link_about">
-					<a href="javascript:void(0);">
+					<a href="javascript:void(0);" class="animated growIn" data-id='1'>
 						<div class="ico ico-user"></div>
 						<span class="label">ABOUT</span>
 					</a>
 				</li>
 				<li class="link_resume">
-					<a href="javascript:void(0);">
+					<a href="javascript:void(0);" class="animated growIn" data-id='2'>
 						<div class="ico ico-news2"></div>
 						<span class="label">RESUME</span>
 					</a>
 				</li>
 				<li class="link_portfolio">
-					<a href="javascript:void(0);">
+					<a href="javascript:void(0);" class="animated growIn" data-id='3'>
 						<div class="ico ico-display"></div>
 						<span class="label">PORTFOLIO</span>
 					</a>
 				</li>
 				<li class="last link_contact">
-					<a href="javascript:void(0);">
+					<a href="javascript:void(0);" class="animated growIn" data-id='4'>
 						<div class="ico ico-phone"></div>
 						<span class="label">CONTACT ME</span>
 					</a>
@@ -73,12 +74,12 @@
 		<div class="wrapper">		
 			<!-- Big Main Panel -->
 			<div class="container main_profile">
-				<div class="inner">
+				<div class="inner animatedParent" data-sequence='500'>
 					<div class="description">
-						<h1 class="title">Rheza Sindhuwinata</h1>
-						<h2>A self-motivated, enthusiast, creative <span class="highlight">Senior Full Stack Web Developer</span>, specialized in building <span class="highlight">E-commerce website</span> and <span class="highlight">mobile responsive site</span></h2>
+						<h1 class="title animated fadeInUpShort" data-id='1'>Rheza Sindhuwinata</h1>
+						<h2 class="animated fadeInUpShort" data-id='2'>A self-motivated, enthusiast, creative <span class="highlight">Senior Full Stack Web Developer</span>, specialized in building <span class="highlight">E-commerce website</span> and <span class="highlight">mobile responsive site</span></h2>
 					</div>
-					<div class="social_media">
+					<div class="social_media animated fadeInUpShort" data-id='3'>
 						<ul class="inline nolist">
 							<li><a href="#" target="_blank"><div class="ico ico-google"></div></a></li>
 							<li><a href="https://www.linkedin.com/in/rheza-sindhuwinata/" target="_blank"><div class="ico ico-social-linkedin"></div></a></li>
@@ -136,7 +137,7 @@
 					
 					<div class="timeline-wrapper">
 						<ul class="timeline timeline-centered">
-							<li class="timeline-item">
+							<li class="timeline-item" data-anijs="if: scroll, on: document, do: swing animated, before: scrollReveal repeat">
 								<div class="timeline-info">
 									<span>02.2014 - Now</span>
 								</div>
@@ -156,7 +157,7 @@
 									</p>
 								</div>
 							</li>
-							<li class="timeline-item">
+							<li class="timeline-item" data-anijs="if: scroll, on: document, do: swing animated, before: scrollReveal repeat">
 								<div class="timeline-info">
 									<span>11.2011 - 01.2014</span>
 								</div>
@@ -175,7 +176,7 @@
 									</p>
 								</div>
 							</li>		
-							<li class="timeline-item last">
+							<li class="timeline-item last" data-anijs="if: scroll, on: document, do: swing animated, before: scrollReveal repeat">
 								<div class="timeline-info">
 									<span>10.2010 - 10.2011</span>
 								</div>
@@ -328,7 +329,8 @@
 			loadCSS("https://fonts.googleapis.com/css?family=Open+Sans|Fjalla+One|Pompiere");
 		</script>		
 		<script async src="js/jquery.transit.min.js"></script>
-		<script async src="js/jquery.mCustomScrollbar.min.js"></script>
-		<script async src="js/main.min.js"></script>
+		<script async src="js/jquery.mCustomScrollbar.min.js"></script>	
+		<script async src='js/css3-animate-it.js'></script>
+		<script async src="js/main.js"></script>
 	</body>
 </html>
